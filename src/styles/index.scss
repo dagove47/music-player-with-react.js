@@ -1,13 +1,82 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+*{
+    margin: 0%;
+    padding: 0%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body{
+    background-image: url("https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-*/
+divv{
+    border: 2px solid red;
+}
+
+.controls-container{
+    height: 40px;
+    background-color: darkblue;
+
+}
+
+.playList-container{
+    margin-bottom: 23px;
+}
+
+.btn-controls{
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.fa-play, .fa-pause{
+    font-size: 25px
+}
+
+.fa-caret-left, .fa-caret-right{
+    color: rgb(141, 141, 141);
+}
+
+.song-btn{
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgba(126,127,127,255);
+    
+}
+.selected{
+    background-color: red;
+}
+
+.hide-play{
+    display: none;
+    font-size: 15px;
+    padding-right: 20px;
+    color: rgba(126,127,127,255);
+}
+
+.song-id{
+    margin-right: 25px;
+    color: rgba(126,127,127,255);
+}
+
+.song-btn{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.song-btn:hover{
+    background-color: green;
+    .song-id{
+        display: none;
+    }
+    .hide-play{
+        display: inline-block;
+    }
+}
